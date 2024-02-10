@@ -48,6 +48,11 @@ body {
     font-weight: 400;  
 }
 
+.text-p-l{
+  font-size: 18px;
+line-height: 27px;
+}
+
 
 /* !animations */
 .fromDown {
@@ -157,6 +162,7 @@ section.hero {
   height: calc(100vh - 121px);
   /* background: linear-gradient(135deg, #E1ECE8 , #fff ); */
   background: linear-gradient(to right, #e1ece8, #f4f8f7, #fff);
+
 }
 section.hero .container {
   display: flex;
@@ -177,10 +183,10 @@ section.hero .container {
 
 
 
-.text-p-l{
+/* .text-p-l{
     font-size: 18px;
   line-height: 27px;
-}
+} */
 
 
 .hero-left .buttons button:nth-of-type(1) {
@@ -327,6 +333,86 @@ flex-basis: 25%;
     /* border: 1px solid red; */
   }
 
+
+
+/* ! Layout cards */
+
+.layout-card .container{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 8rem;
+}
+
+.layout-content{
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  /* justify-content: space-between; */
+gap: 1.5rem;
+}
+
+
+.layout-content ul{
+list-style-type:none;
+}
+
+
+.layout-content ul li{
+ 
+  position: relative;
+  padding: 10px;
+  padding-left: 45px;
+}
+
+
+.layout-content ul li::before{
+ 
+content: "";
+position: absolute;
+background-image: url(./img/checkbox-img.svg);
+width: 33px;
+height: 33px;
+background-size: cover;
+left: 0;
+top:50%;
+transform: translateY(-50%);
+}
+
+
+.layout-img{
+  flex: 1;
+
+  /* text-align:center */
+}
+
+
+.layout-img img{
+  width: 100%;
+  object-fit: cover;
+
+}
+
+.layout-buttons{
+  display: flex;
+  align-items: center;
+  row-gap: 10px;
+  column-gap: 2px;
+}
+.layout-buttons button{
+  white-space: nowrap;
+}
+ .layout-buttons button:nth-of-type(2){
+border: none;
+background-color: transparent;
+
+
+}
+
+
+
+
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 /* !!!!!!!!!!!!!!!! Media Queries !!!!!!!!!!!!!!!!!! */
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
@@ -382,5 +468,14 @@ flex-basis: 25%;
   .ai-steps{
     flex-direction: column;
 
+  }
+
+/*! layout-card */
+  .layout-card .container{
+   flex-direction: column-reverse;
+  }
+
+  .layout-img{
+    width: 75%;
   }
 }
