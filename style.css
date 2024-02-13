@@ -549,7 +549,7 @@ section.support{
   background-color: #000;
   color: #fff;
   padding-top: 10rem;
-  padding-bottom: 4rem;
+  padding-bottom: 0;
 overflow: hidden;
 
 }
@@ -575,8 +575,8 @@ z-index: 2;
   top: 270px;
   transform: translateX(-50%); */
   z-index: 1; 
-  width:  100%;
-  animation: circle 10s linear  infinite;
+  width:  95%;
+  animation: circle 20s linear  infinite;
 
 
 }
@@ -591,6 +591,113 @@ z-index: 2;
     transform-origin: top;
   
   }
+}
+
+
+/* ! FOOTER */
+
+
+.footer-content{
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 2rem;
+margin-bottom: 3rem;
+
+
+}
+
+.fc-left{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-self: center;
+  gap: .5px;
+  font-size: 14px;
+  line-height: 21px;
+}
+.fc-left img{
+  width: 140px;
+
+  position: relative;
+  right: 10px;
+  top: 15px;
+}
+
+.fc-left a{
+  color: #000;
+  transition: .4s all;
+
+}
+.fc-left a:hover{
+  color: #69877B;
+
+}
+
+.fc-left-icons{
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+.fc-left-icons i{
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: .4s all;
+
+}
+
+.fc-left-icons i:hover{
+color: #69877B;
+}
+
+.fc-right{
+  display: flex;
+  align-items: start;
+  gap: 2rem;
+}
+.footer-link-list{
+display: flex;
+flex-direction: column;
+align-items: start;
+gap: 1rem;
+}
+
+.footer-link-list a{
+  color: #000;
+  text-decoration: none;
+  transition: .4s all;
+}
+.footer-link-list a:hover{
+  color: #69877B;
+}
+footer hr{
+  border: none;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.296);
+}
+
+.footer-last{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+}
+
+.footer-last p a{
+  color:#000;
+  font-weight: 550;
+}
+
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.footer-links a{
+  color:#000;
+  font-size: 14px;
+
 }
 
 
@@ -687,6 +794,32 @@ z-index: 2;
 
   } 
 
+  .footer-content{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    
+    
+    flex-direction: column;
+    align-items: flex-start;
+    }
+    .fc-right{
+      display: flex;
+      align-items: start;
+      gap: 2rem;
+      width: 80%;
+      justify-content: space-between;
+
+    }
+
+
+    .footer-last{
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 2rem;
+      margin-top: 3rem;
+    }
 }
 
 
@@ -746,5 +879,17 @@ margin-bottom: 5rem;
     padding-top: 12rem;
 
   }
+
+
+.support-circle{
+  margin-top: 3rem;
+
+
+}
+.footer-links {
+  flex-direction: column;
+  align-items: flex-start;
+
+}
 
 }
