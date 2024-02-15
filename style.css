@@ -1247,6 +1247,76 @@ section.questions {
 
 
 
+/* ! Contact */
+
+.contact .container{
+  display: flex;
+  align-items: start;
+  gap: 2rem;
+}
+.contact-content{
+
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1.5rem;
+
+}
+.contact-infos{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+}
+
+.contact-infos h5{
+margin-bottom: 10px;
+}
+
+.contact-infos p{font-size: 14px;
+  }
+.contact-form{
+  flex: 1;
+  background-color: #eeeaea;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px rgb(168, 167, 167);
+}
+.contact-form form{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(5,1fr);
+  gap: 1rem;
+}
+.input-wrapper label{
+  font-size: .8rem;
+}
+
+.input-wrapper input{
+  margin-top: 5px;
+width: 100%;
+padding: 10px;
+border: none;
+border-radius: 10px;
+}
+.textarea-wrapper{
+  grid-area: 3/1/5/3;
+}
+.textarea-wrapper textarea{
+  width: 100%;
+  height: 100%;
+  resize: none;
+  border: none;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+
+#contact-form-submit{
+  width: 80%;
+  margin-top: 20px;
+}
+
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 /* !!!!!!!!!!!!!!!! Media Queries !!!!!!!!!!!!!!!!!! */
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */

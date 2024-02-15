@@ -69,7 +69,7 @@
     <section class="contact">
       <div class="container">
         <div class="contact-content">
-          <h1 class="text-p-xl"><b>Send</b> us a message</h1>
+          <h1 class="text-l"><b>Send</b> us a message</h1>
           <p class="">We’re here to help you anytime 24/7.</p>
           <div class="contact-infos">
             <img src="./img/contact-icons/mail.svg" alt="" />
@@ -95,10 +95,33 @@
         </div>
         <div class="contact-form">
           <form action="">
+            <div class="input-wrapper">
+              <label for="firstname">First name</label>
+              <input type="text" name="firstname" id="firstname">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="lastname">Last name</label>
+              <input type="text" name="lastname" id="lastname">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="workemail">Work email</label>
+              <input type="email" name="workemail" id="workemail">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="orgname">Organisation name</label>
+              <input type="text" name="orgname" id="orgname">
+            </div>
+
+
+            <div class="textarea-wrapper">
+              <p>How can we help you?</p>
+              <textarea name="text" id="exampletext" ></textarea>
+            </div>
             
-
-
-
+            <input type="submit" id="contact-form-submit" class="btn btn-green" value="Submit form">
           </form>
         </div>
       </div>
