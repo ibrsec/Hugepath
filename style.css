@@ -128,6 +128,11 @@ body {
   }
 }
 
+
+
+
+
+
 /* !header */
 header {
   background: linear-gradient(to right, #e1ece8, #f4f8f7, #fff);
@@ -285,10 +290,16 @@ header .container .header-right i.bi-list {
   margin-top: 1.5rem;
 }
 
+
+
+
+
+
 /* ! Hero Section */
 
 section.hero {
-  height: calc(100vh - 121px);
+  /* height: calc(100vh - 121px); */
+  margin-top: 120px;
   /* background: linear-gradient(135deg, #E1ECE8 , #fff ); */
   background: linear-gradient(to right, #e1ece8, #f4f8f7, #fff);
 }
@@ -975,6 +986,7 @@ section.pricing-hero .container{
 
 .pricing-card{
   height: 650px;
+  min-width: 2950px;
   padding: 2rem;
   background-color: #f5f1f1;
   border-radius: 15px;
@@ -1249,9 +1261,10 @@ section.questions {
 
 /* ! Contact */
 
-.contact .container{
+section.contact .container{
   display: flex;
   align-items: start;
+  justify-content: space-between;
   gap: 2rem;
 }
 .contact-content{
@@ -1278,6 +1291,7 @@ margin-bottom: 10px;
   }
 .contact-form{
   flex: 1;
+  max-width:600px;
   background-color: #eeeaea;
   padding: 1rem;
   border-radius: 10px;
@@ -1475,6 +1489,29 @@ border-radius: 10px;
   grid-template-columns: 1fr 1fr ;
 }
 
+
+/* !contact */
+section.contact .container{
+  display: flex;
+  align-items: start;
+  gap: 2rem;
+
+  flex-direction: column;
+}
+
+
+.contact-form{
+  max-width:unset;
+
+
+}
+
+
+#contact-form-submit{
+  width: unset;
+
+}
+
 }
 
 @media (max-width: 800px) {
@@ -1609,5 +1646,9 @@ border-radius: 10px;
   .pricing-card{
     width: 100%;
   
+  }
+
+  .invert-card p{
+    font-size: smaller;
   }
 }
