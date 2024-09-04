@@ -19,7 +19,7 @@
     <a href="https://github.com/ibrsec/Hugepath"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://ibrsec.github.io/Hugepath/">View Demo</a>
+    <a href="https://hugepath.vercel.app/">View Demo</a>
     ·
     <a href="https://github.com/ibrsec/Hugepath/issues">Report Bug</a>
     ·
@@ -59,7 +59,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Hugepath](./img/p.gif)](https://ibrsec.github.io/Hugepath/)
+[![Hugepath](./img/p.gif)](https://hugepath.vercel.app/)
 
 
 
