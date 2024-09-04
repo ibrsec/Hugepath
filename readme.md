@@ -59,7 +59,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Hugepath](./img/p.gif)](https://hugepath.vercel.app/)
+[![Hugepath](./img/p.png)](https://hugepath.vercel.app/)
 
 
 
